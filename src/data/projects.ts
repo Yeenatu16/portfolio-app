@@ -11,7 +11,6 @@ export const projects = [
     link: "",
     github: "https://github.com/Yeenatu16/To-Do-App-spring-and-react",
   },
-  ,
   {
     id: "2",
     title: "Mini-Banking-Application",
