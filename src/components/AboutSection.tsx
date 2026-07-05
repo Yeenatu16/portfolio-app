@@ -9,11 +9,23 @@ import { User, MapPin, Mail, Phone, Calendar, Award } from "lucide-react";
 export default function AboutSection() {
   const details = [
     { icon: <Calendar size={20} />, label: "Birthday", value: "23 March 2000" },
-    { icon: <MapPin size={20} />, label: "City", value: "May_kinetal, Tigray, Ethiopia" },
+    {
+      icon: <MapPin size={20} />,
+      label: "City",
+      value: "May_kinetal, Tigray, Ethiopia",
+    },
     { icon: <User size={20} />, label: "Age", value: "26" },
-    { icon: <Award size={20} />, label: "Degree", value: "Software Engineering" },
+    {
+      icon: <Award size={20} />,
+      label: "Degree",
+      value: "Software Engineering",
+    },
     { icon: <Phone size={20} />, label: "Phone", value: "+251946902518" },
-    { icon: <Mail size={20} />, label: "Email", value: "kibromgidey017@gmail.com" },
+    {
+      icon: <Mail size={20} />,
+      label: "Email",
+      value: "kibromgidey017@gmail.com",
+    },
   ];
 
   const skills = [
@@ -37,7 +49,6 @@ export default function AboutSection() {
             skills through projects and study."
         />
         <div className="grid lg:grid-cols-12 gap-12 items-start mt-12">
-
           {/* Profile Image Column */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -49,7 +60,7 @@ export default function AboutSection() {
             {/* Minimized profile image */}
             <div className="relative w-52 h-60 sm:w-60 sm:h-72 rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-800 mx-auto">
               <Image
-                src="/profile-square-3.jpg"
+                src="/profile.jpg"
                 alt="Kibrom Profile"
                 fill
                 className="object-cover"
@@ -105,10 +116,12 @@ export default function AboutSection() {
                 Transforming Ideas into Digital Reality
               </h3>
               <p className="text-muted leading-relaxed text-lg">
-                I focus on delivering clean, maintainable code and user-friendly interfaces. My goal
-                is to take ideas from concept to production — building applications that are robust
-                and delightful to use. I&apos;m always learning — currently strengthening full-stack
-                skills and Java so I can contribute effectively to real projects and teams.
+                I focus on delivering clean, maintainable code and user-friendly
+                interfaces. My goal is to take ideas from concept to production
+                — building applications that are robust and delightful to use.
+                I&apos;m always learning — currently strengthening full-stack
+                skills and Java so I can contribute effectively to real projects
+                and teams.
               </p>
             </motion.div>
 
@@ -127,7 +140,10 @@ export default function AboutSection() {
                   </div>
                   <div className="min-w-0">
                     <p className="text-sm text-muted mb-0.5">{item.label}</p>
-                    <p className="font-medium text-foreground truncate" title={item.value}>
+                    <p
+                      className="font-medium text-foreground truncate"
+                      title={item.value}
+                    >
                       {item.value}
                     </p>
                   </div>
@@ -143,12 +159,16 @@ export default function AboutSection() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="bg-card p-6 rounded-2xl shadow-sm border border-border"
             >
-              <h3 className="text-xl font-bold mb-6 text-foreground">Technical Skills</h3>
+              <h3 className="text-xl font-bold mb-6 text-foreground">
+                Technical Skills
+              </h3>
               <div className="grid sm:grid-cols-2 gap-x-8 gap-y-6">
                 {skills.map((skill, index) => (
                   <div key={index}>
                     <div className="flex justify-between mb-2">
-                      <span className="font-medium text-foreground text-sm">{skill.name}</span>
+                      <span className="font-medium text-foreground text-sm">
+                        {skill.name}
+                      </span>
                       <span className="text-muted text-sm">{skill.level}%</span>
                     </div>
                     <div className="h-2 w-full bg-border rounded-full overflow-hidden">
